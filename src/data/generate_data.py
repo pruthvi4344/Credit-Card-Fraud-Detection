@@ -15,6 +15,7 @@ def generate_dataset(n=5000, fraud_rate=0.02, seed=42):
     countries[y == 1] = 1
     hours[y == 1] = np.random.choice([0, 1, 2, 3, 4], size=(y == 1).sum())
 
+    # returning the data frame
     return pd.DataFrame({
         "amount": amounts,
         "hour": hours,
