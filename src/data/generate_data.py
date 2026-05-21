@@ -24,7 +24,7 @@ def generate_dataset(n=5000, fraud_rate=0.02, seed=42):
     })
 
 if __name__ == "__main__":
-    out = Path("data/raw/transactions.csv")
+    out = Path("data/raw/transactions.csv") #path for storing CSV file
     out.parent.mkdir(parents=True, exist_ok=True)
     generate_dataset().to_csv(out, index=False)
     print(f"Saved dataset to {out}")
