@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
+# generating the dataset
 def generate_dataset(n=5000, fraud_rate=0.02, seed=42):
     np.random.seed(seed)
     amounts = np.random.exponential(scale=100, size=n)
