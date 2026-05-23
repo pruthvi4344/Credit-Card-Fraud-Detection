@@ -8,6 +8,7 @@ from src.models.predict import assign_risk
 # implementing fastapi
 app = FastAPI(title="Fraud Detection API")
 
+# defining transaction class
 class Transaction(BaseModel):
     amount: float
     hour: int
