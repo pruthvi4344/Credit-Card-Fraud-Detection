@@ -1,3 +1,4 @@
+-- fraud detection table created
 CREATE TABLE fraud_predictions (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     amount REAL,
