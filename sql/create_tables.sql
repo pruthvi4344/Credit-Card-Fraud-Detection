@@ -25,3 +25,20 @@ CREATE TABLE transactions (
 
     status TEXT
 );
+
+-- customer detials table
+CREATE TABLE customers (
+    customer_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    full_name TEXT,
+
+    email TEXT UNIQUE,
+
+    phone TEXT,
+
+    city TEXT,
+
+    country TEXT,
+
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
