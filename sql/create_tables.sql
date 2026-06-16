@@ -42,3 +42,20 @@ CREATE TABLE customers (
 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+--Stores ML model information.
+CREATE TABLE models (
+    model_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    model_name TEXT,
+
+    version TEXT,
+
+    accuracy REAL,
+
+    precision_score REAL,
+
+    recall_score REAL,
+
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
