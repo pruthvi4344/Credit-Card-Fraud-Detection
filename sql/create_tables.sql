@@ -72,3 +72,19 @@ CREATE TABLE users (
 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+-- prediction history table (Keeps history of every prediction)
+CREATE TABLE prediction_history (
+    history_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    transaction_id INTEGER,
+
+    fraud_probability REAL,
+
+    risk_level TEXT,
+
+    predicted_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (transaction_id)
+    REFERENCES transactions(transaction_id)
+);
