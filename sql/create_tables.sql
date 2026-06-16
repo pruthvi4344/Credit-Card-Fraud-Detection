@@ -59,3 +59,16 @@ CREATE TABLE models (
 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+-- user login
+CREATE TABLE users (
+    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    username TEXT UNIQUE,
+
+    password_hash TEXT,
+
+    role TEXT,
+
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
