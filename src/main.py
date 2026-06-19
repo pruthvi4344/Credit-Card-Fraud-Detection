@@ -43,7 +43,7 @@ def display_summary(scored_df):
 
     print("=============================\n")
 
-
+# saving the report
 def save_report(scored_df):
 
     report_path = "reports/fraud_report.csv"
