@@ -55,7 +55,7 @@ def save_report(scored_df):
 
     print(f"Report saved: {report_path}")
 
-
+# main function
 def main():
 
     print("\nStarting pipeline...")
