@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from src.config.settings import MODEL_PATH
 from src.models.predict import assign_risk
 
-# implementing fastapi
+# implemented fastapi
 app = FastAPI(title="Fraud Detection API")
 
 # defining transaction class
