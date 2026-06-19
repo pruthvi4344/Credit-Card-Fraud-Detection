@@ -19,6 +19,7 @@ def load_model():
     global model
     model = joblib.load(MODEL_PATH)
 
+# score function
 @app.post("/score")
 def score(tx: Transaction):
     df = pd.DataFrame([{
