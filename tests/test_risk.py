@@ -1,5 +1,6 @@
 from src.models.predict import assign_risk
 
+# this is the testing 
 def test_assign_risk():
     assert assign_risk(0.1) == "Low"
     assert assign_risk(0.3) == "Medium"
